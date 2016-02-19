@@ -1,0 +1,77 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="gtrotter.eu.android.fragments.FilterPanelFragment"
+    android:gravity="bottom">
+
+    <LinearLayout
+        android:id="@+id/filter_panel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:visibility="gone"
+        android:layout_alignParentBottom="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginStart="8dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/filter_panel_title"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="start|center_vertical"
+                android:text="@string/filter_panel_title"
+                android:textColor="@android:color/white"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/filter_panel_description"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="end|center_vertical"
+                android:textColor="@android:color/white"
+                android:textSize="18sp"
+                android:textStyle="normal" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_margin="8dp"
+            android:background="@android:color/white" />
+
+        <GridView
+            android:id="@+id/filter_panel_grid_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:gravity="center"
+            android:horizontalSpacing="4dp"
+            android:numColumns="6"
+            android:stretchMode="columnWidth"
+            android:verticalSpacing="4dp" />
+
+    </LinearLayout>
+
+    <gtrotter.eu.android.utilities.Fab.FilterFab
+        android:id="@+id/filter_fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/filter_panel"
+        android:layout_alignParentStart="true"
+        android:layout_margin="@dimen/fab_margin"
+        custom:icon_show="@drawable/ic_layers_white_36dp" />
+</RelativeLayout>

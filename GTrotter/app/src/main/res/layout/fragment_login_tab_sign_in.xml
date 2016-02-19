@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:background="@color/colorPrimaryDark"
+        android:orientation="vertical">
+
+        <com.github.florent37.materialtextfield.MaterialTextField
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/activity_vertical_margin"
+            android:layout_marginRight="@dimen/activity_vertical_margin"
+            app:mtf_cardCollapsedHeight="4dp"
+            app:mtf_cardColor="@android:color/white"
+            app:mtf_image="@drawable/ic_mood_black_36dp"
+            app:mtf_labelColor="@android:color/white">
+
+            <EditText
+                android:id="@+id/et_login_username"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:elevation="0dp"
+                android:hint="@string/et_login_username"
+                android:inputType="textPersonName|textEmailAddress" />
+        </com.github.florent37.materialtextfield.MaterialTextField>
+
+        <com.github.florent37.materialtextfield.MaterialTextField
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/activity_vertical_margin"
+            android:layout_marginRight="@dimen/activity_vertical_margin"
+            android:layout_marginTop="@dimen/layout_sign_in_margin_top_second"
+            app:mtf_cardCollapsedHeight="4dp"
+            app:mtf_cardColor="@android:color/white"
+            app:mtf_image="@drawable/ic_lock_black_36dp"
+            app:mtf_labelColor="@android:color/white">
+
+            <EditText
+                android:id="@+id/et_login_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/et_login_password"
+                android:inputType="textPassword" />
+        </com.github.florent37.materialtextfield.MaterialTextField>
+
+        <CheckBox
+            android:id="@+id/cb_remember_me"
+            style="@style/CustomCheckBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/middle"
+            android:onClick="myOnClickedLogin"
+            android:text="@string/remember_me"
+            android:textColor="@color/textColorLight" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/or_connect_with"
+            android:textSize="20sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/middle"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/btn_sign_in_facebook"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/activity_vertical_margin"
+                android:contentDescription="@string/image_facebook_description"
+                android:onClick="myOnClickedLogin"
+                android:src="@drawable/ic_facebook_50" />
+
+            <ImageView
+                android:id="@+id/btn_sign_in_google"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/activity_vertical_margin"
+                android:contentDescription="@string/image_google_plus_description"
+                android:onClick="myOnClickedLogin"
+                android:src="@drawable/ic_google_plus_50" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/tv_forget_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:onClick="myOnClickedLogin">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:layout_marginLeft="@dimen/middle"
+                android:layout_marginRight="@dimen/middle"
+                android:layout_marginTop="@dimen/activity_horizontal_margin"
+                android:text="@string/forget_password"
+                android:textColor="@android:color/white" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_sign_in"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/activity_horizontal_margin"
+        android:background="@android:color/white"
+        android:onClick="myOnClickedLogin"
+        android:text="@string/tab_sign_in_title"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="32sp" />
+</RelativeLayout>

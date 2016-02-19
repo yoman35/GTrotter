@@ -1,0 +1,405 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="gtrotter.eu.android.activities.SettingsActivity">
+
+    <include
+        android:id="@+id/app_bar_settings_activity"
+        layout="@layout/app_bar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/app_bar_settings_activity"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:elevation="5dp"
+            android:orientation="vertical">
+
+            <!-- ACCOUNT -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/setting_account"
+                android:textColor="@android:color/black"
+                android:textStyle="bold" />
+            <!-- PASSWORD -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start|center_vertical"
+                    android:layout_weight="1"
+                    android:contentDescription="@string/settings_logo_password"
+                    android:src="@drawable/ic_vpn_key_black_24dp" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="4"
+                    android:gravity="start|center_vertical"
+                    android:paddingEnd="0dp"
+                    android:paddingStart="8dp"
+                    android:text="@string/settings_text_password"
+                    android:textColor="@android:color/black" />
+            </LinearLayout>
+            <!-- SEPARATOR -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:orientation="horizontal">
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="4"
+                    android:background="@color/common_action_bar_splitter" />
+            </LinearLayout>
+            <!-- LANGUAGE -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start|center_vertical"
+                    android:layout_weight="1"
+                    android:contentDescription="@string/settings_logo_language"
+                    android:src="@drawable/ic_language_black_24dp" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="4"
+                    android:gravity="start|center_vertical"
+                    android:paddingEnd="0dp"
+                    android:paddingStart="8dp"
+                    android:text="@string/settings_text_language"
+                    android:textColor="@android:color/black" />
+            </LinearLayout>
+            <!-- SEPARATOR -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:orientation="horizontal">
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="4"
+                    android:background="@color/common_action_bar_splitter" />
+            </LinearLayout>
+            <!-- OFFLINE MODE -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start|center_vertical"
+                    android:layout_weight="1"
+                    android:contentDescription="@string/settings_logo_offline_mode"
+                    android:src="@drawable/ic_save_black_24dp" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="3"
+                    android:gravity="start|center_vertical"
+                    android:paddingEnd="0dp"
+                    android:paddingStart="8dp"
+                    android:text="@string/settings_text_offline_mode"
+                    android:textColor="@android:color/black" />
+
+                <CheckBox
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="end|center_vertical" />
+            </LinearLayout>
+            <!-- SEPARATOR -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:orientation="horizontal">
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="4"
+                    android:background="@color/common_action_bar_splitter" />
+            </LinearLayout>
+            <!-- DELETE ACCOUNT -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start|center_vertical"
+                    android:layout_weight="1"
+                    android:contentDescription="@string/settings_logo_delete_account"
+                    android:src="@drawable/ic_delete_black_24dp" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="4"
+                    android:gravity="start|center_vertical"
+                    android:paddingEnd="0dp"
+                    android:paddingStart="8dp"
+                    android:text="@string/settings_text_delete_account"
+                    android:textColor="@android:color/black" />
+            </LinearLayout>
+
+            <!-- SECTION SEPARATOR -->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="8dp" />
+
+            <!-- MAP -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/settings_map"
+                android:textColor="@android:color/black"
+                android:textStyle="bold" />
+            <!-- MAP VIEW -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start|center_vertical"
+                    android:layout_weight="1"
+                    android:contentDescription="@string/settings_logo_view_map"
+                    android:src="@drawable/ic_satellite_black_24dp" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="4"
+                    android:gravity="start|center_vertical"
+                    android:paddingEnd="0dp"
+                    android:paddingStart="12dp"
+                    android:text="@string/settings_text_view_map"
+                    android:textColor="@android:color/black" />
+            </LinearLayout>
+
+            <!-- SECTION SEPARATOR -->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="8dp" />
+
+            <!-- TRIPS -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/settings_trips"
+                android:textColor="@android:color/black"
+                android:textStyle="bold" />
+            <!-- OFFLINE MODE -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start|center_vertical"
+                    android:layout_weight="1"
+                    android:contentDescription="@string/settings_logo_offline_mode_trips"
+                    android:src="@drawable/ic_save_black_24dp" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="3"
+                    android:gravity="start|center_vertical"
+                    android:paddingEnd="0dp"
+                    android:paddingStart="12dp"
+                    android:text="@string/settings_text_offline_mode_trips"
+                    android:textColor="@android:color/black" />
+
+                <CheckBox
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="end|center_vertical" />
+            </LinearLayout>
+            <!-- SEPARATOR -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:orientation="horizontal">
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="4"
+                    android:background="@color/common_action_bar_splitter" />
+            </LinearLayout>
+            <!-- DELETE TRIPS -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start|center_vertical"
+                    android:layout_weight="1"
+                    android:contentDescription="@string/settings_logo_delete_trips"
+                    android:src="@drawable/ic_delete_black_24dp" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="4"
+                    android:gravity="start|center_vertical"
+                    android:paddingEnd="0dp"
+                    android:paddingStart="12dp"
+                    android:text="@string/settings_text_delete_trips"
+                    android:textColor="@android:color/black" />
+            </LinearLayout>
+
+            <!-- SECTION SEPARATOR -->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="8dp" />
+
+            <!-- PICTURES -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/settings_pictures"
+                android:textColor="@android:color/black"
+                android:textStyle="bold" />
+            <!-- OFFLINE MODE -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start|center_vertical"
+                    android:layout_weight="1"
+                    android:contentDescription="@string/settings_logo_offline_mode_pictures"
+                    android:src="@drawable/ic_save_black_24dp" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="3"
+                    android:gravity="start|center_vertical"
+                    android:paddingEnd="0dp"
+                    android:paddingStart="12dp"
+                    android:text="@string/settings_text_offline_mode_pictures"
+                    android:textColor="@android:color/black" />
+
+                <CheckBox
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="end|center_vertical" />
+            </LinearLayout>
+            <!-- SEPARATOR -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:orientation="horizontal">
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="4"
+                    android:background="@color/common_action_bar_splitter" />
+            </LinearLayout>
+            <!-- DELETE PICTURES -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start|center_vertical"
+                    android:layout_weight="1"
+                    android:contentDescription="@string/settings_logo_delete_pictures"
+                    android:src="@drawable/ic_delete_black_24dp" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="4"
+                    android:gravity="start|center_vertical"
+                    android:paddingEnd="0dp"
+                    android:paddingStart="12dp"
+                    android:text="@string/settings_text_delete_pictures"
+                    android:textColor="@android:color/black" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

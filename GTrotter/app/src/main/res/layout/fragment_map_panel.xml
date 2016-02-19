@@ -1,0 +1,140 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context="gtrotter.eu.android.fragments.MapPanelFragment">
+
+    <!-- TITLE AREA -->
+    <RelativeLayout
+        android:id="@+id/fragment_map_panel_title"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_alignParentTop="true"
+        android:background="@color/colorAccent">
+        <!-- ADD TRIP BUTTON -->
+        <ImageView
+            android:id="@+id/fragment_map_panel_add_trip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerInParent="true"
+            android:layout_margin="8dp"
+            android:contentDescription="@string/map_panel_add"
+            android:src="@drawable/ic_add_circle_outline_white_36dp" />
+        <!-- TITLE -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/trips_title"
+            android:textColor="@android:color/white"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <!-- LIST OF TRIPS -->
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/fragment_map_panel_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/fragment_map_panel_title" />
+
+    <!-- ADD TRIP PANEL -->
+    <RelativeLayout
+        android:id="@+id/add_trip_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/white"
+        android:layout_below="@id/fragment_map_panel_title">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:orientation="vertical"
+            android:padding="8dp">
+            <!-- TRIP NAME -->
+            <EditText
+                android:id="@+id/create_trip_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/create_trip_name"
+                android:inputType="textNoSuggestions"
+                android:maxLength="15"
+                android:textSize="28sp"
+                android:singleLine="true"
+                android:gravity="start|center_vertical"
+                android:layout_marginBottom="24dp"
+                android:textColor="@color/colorAccent"
+                android:textColorHint="@color/colorAccent"/>
+            <!-- FROM -->
+            <TextView
+                android:id="@+id/create_trip_from"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/create_trip_from"
+                android:layout_marginStart="6dp"
+                android:textStyle="bold"/>
+            <EditText
+                android:id="@+id/create_trip_start_town"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/create_trip_town_start"
+                android:inputType="textNoSuggestions"
+                android:singleLine="true"/>
+            <EditText
+                android:id="@+id/create_trip_start_date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="date"
+                android:hint="@string/create_trip_date_start"
+                android:layout_marginBottom="24dp"/>
+            <!-- TO -->
+            <TextView
+                android:id="@+id/create_trip_to"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/create_trip_to"
+                android:layout_marginStart="6dp"
+                android:textStyle="bold"/>
+            <EditText
+                android:id="@+id/create_trip_end_town"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/create_trip_town_end"
+                android:inputType="textNoSuggestions"
+                android:singleLine="true"/>
+            <EditText
+                android:id="@+id/create_trip_end_date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="date"
+                android:hint="@string/create_trip_date_end"/>
+            <!-- PRIVATE -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <CheckBox
+                    android:id="@+id/create_trip_privacy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/create_trip_privacy"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- SAVE BUTTON -->
+        <Button
+            android:id="@+id/create_trip_save"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@color/colorAccent"
+            android:text="@string/create_trip_save_button"
+            android:textColor="@android:color/white"
+            android:textSize="20sp" />
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="ContactFabDelete">
+        <attr name="icon_delete" format="integer" />
+        <attr name="icon_undo" format="integer" />
+    </declare-styleable>
+</resources>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="48dp"
+    android:layout_marginBottom="4dp"
+    android:layout_marginTop="2dp"
+    android:orientation="horizontal"
+    android:gravity="center"
+    android:id="@+id/contact">
+
+    <LinearLayout
+        android:id="@+id/contact_clickable"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="4">
+
+        <RelativeLayout
+            android:layout_width="64dp"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/contact_avatar"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:contentDescription="@string/contact_avatar"
+                android:src="@android:color/darker_gray"
+                android:scaleType="centerCrop"/>
+
+            <TextView
+                android:id="@+id/contact_letter"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:textColor="@android:color/white"
+                android:textStyle="bold"
+                android:textSize="24sp"/>
+
+
+            <ImageView
+                android:id="@+id/contact_selected"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/ic_check_circle_white_24dp"
+                android:contentDescription="@string/contact_selected"
+                android:scaleType="fitCenter"
+                android:visibility="gone"/>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/contact_padding_left_text"
+            android:paddingRight="@dimen/contact_padding_left_text"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/contact_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/contact_name"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:textColor="@color/colorAccent"/>
+
+            <TextView
+                android:id="@+id/contact_phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/contact_phone" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/contact_favor"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:contentDescription="@string/contact_favor" />
+
+</LinearLayout>

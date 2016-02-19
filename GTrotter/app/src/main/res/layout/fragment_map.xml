@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/map_drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="gtrotter.eu.android.fragments.MyMapFragment">
+
+    <FrameLayout
+        android:id="@+id/map"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <FrameLayout
+        android:id="@+id/filter_panel_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/geoloc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_margin="8dp"
+            android:background="@color/colorAccent"
+            android:contentDescription="geo"
+            android:padding="4dp"
+            android:src="@drawable/ic_location_searching_white_36dp" />
+
+        <ImageView
+            android:id="@+id/zoomin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/geoloc"
+            android:background="@color/colorAccent"
+            android:contentDescription="zoomIn"
+            android:src="@drawable/ic_zoom_in_white_24dp"
+            android:padding="4dp"
+            android:layout_margin="8dp"/>
+
+        <ImageView
+            android:id="@+id/zoomout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/zoomin"
+            android:background="@color/colorAccent"
+            android:contentDescription="zoomIn"
+            android:src="@drawable/ic_zoom_out_white_24dp"
+            android:padding="4dp"
+            android:layout_margin="8dp"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/map_button_trips"
+            android:layout_width="112dp"
+            android:layout_height="wrap_content"
+            android:background="@color/colorAccent"
+            android:gravity="center"
+            android:text="@string/map_button_trips"
+            android:textColor="@android:color/white" />
+    </LinearLayout>
+
+
+    <FrameLayout
+        android:id="@+id/fragment_map_frame_layout_panel"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="end" />
+
+</android.support.v4.widget.DrawerLayout>
+

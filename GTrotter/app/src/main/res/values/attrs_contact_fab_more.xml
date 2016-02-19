@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="ContactFabMore">
+        <attr name="icon_more" format="integer" />
+        <attr name="icon_select" format="integer" />
+    </declare-styleable>
+</resources>

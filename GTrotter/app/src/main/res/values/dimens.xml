@@ -1,0 +1,57 @@
+<resources>
+    <!-- Android Material Design Guideline -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="big_section_title_height">72dp</dimen>
+    <dimen name="section_title_height">48dp</dimen>
+    <dimen name="list_object_height">72dp</dimen>
+    <dimen name="list_separator_height">8dp</dimen>
+    <dimen name="window_text_right_margin">8dp</dimen>
+    <dimen name="icon_diameter">56dp</dimen>
+    <!-- App bar -->
+    <dimen name="toolbar_height">56dp</dimen>
+    <dimen name="app_bar_padding_top">0dp</dimen>
+    <dimen name="app_bar_padding_top_plus">4dp</dimen>
+    <dimen name="status_bar_height">24dp</dimen>
+    <!-- Navigation drawer -->
+    <dimen name="navigation_drawer_width">304dp</dimen>
+    <dimen name="navigation_drawer_image_margin_top">0dp</dimen>
+    <dimen name="navigation_drawer_header_height">168dp</dimen>
+    <dimen name="img_16_9_navigation_drawer_height">168dp</dimen>
+    <dimen name="navigation_drawer_image_margin_bottom">16dp</dimen>
+    <dimen name="recycler_view_row_height">48dp</dimen>
+    <dimen name="recycler_view_icon_diameter">30dp</dimen>
+    <dimen name="text_margin_left">72dp</dimen>
+    <dimen name="recycler_view_text_left_margin_from_icon">24dp</dimen>
+    <dimen name="navigation_drawer_header_text_area">56dp</dimen>
+    <dimen name="right_panel_width">200dp</dimen>
+    <dimen name="right_panel_height">300dp</dimen>
+    <dimen name="button_login_width">200dp</dimen>
+    <dimen name="middle">12dp</dimen>
+    <dimen name="large">24dp</dimen>
+    <dimen name="xlarge">18dp</dimen>
+    <dimen name="layout_sign_in_margin_top">24dp</dimen>
+    <dimen name="small">8dp</dimen>
+    <dimen name="card_elevation">2dp</dimen>
+    <dimen name="card_radius_corner">2dp</dimen>
+    <dimen name="rv_fragment_item_low_bar">48dp</dimen>
+    <dimen name="rv_fragment_width">150dp</dimen>
+    <dimen name="rv_fragment_item_height">85dp</dimen>
+    <dimen name="logo_size">24dp</dimen>
+    <dimen name="fragment_map_panel_item">24dp</dimen>
+    <dimen name="fragment_map_panel_list_item_tv_margin_left">20dp</dimen>
+    <dimen name="grid_view_spacing">2dp</dimen>
+    <dimen name="work_in_progress_margin">48dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="contact_padding_left_text">24dp</dimen>
+    <dimen name="fab_mini_first_bottom">82dp</dimen>
+    <dimen name="fab_mini_second_bottom">138dp</dimen>
+    <dimen name="layout_sign_in_margin_top_second">4dp</dimen>
+    <dimen name="footer_button_margin_height">104dp</dimen>
+    <dimen name="about_right_button_margin">88dp</dimen>
+    <dimen name="cardview_content_padding">16dp</dimen>
+    <dimen name="cardview_button_elevation">5dp</dimen>
+    <dimen name="footer_button_height">90dp</dimen>
+    <dimen name="about_right_button_size">70dp</dimen>
+    <dimen name="form_send_button">60dp</dimen>
+</resources>

@@ -1,0 +1,57 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/contact_fragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.ContactsFragment">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/contact_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <gtrotter.eu.android.utilities.Fab.ContactFabMore
+        android:id="@+id/contact_fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="@dimen/fab_margin"
+        custom:icon_more="@drawable/ic_add_white_24dp"
+        custom:icon_select="@drawable/ic_check_circle_white_24dp" />
+
+    <gtrotter.eu.android.utilities.Fab.ContactFabAdd
+        android:id="@+id/contact_fab_add"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_gravity="bottom|end"
+        android:layout_marginBottom="@dimen/fab_mini_first_bottom"
+        android:layout_marginLeft="@dimen/fab_margin"
+        android:layout_marginRight="@dimen/fab_margin"
+        android:layout_marginTop="@dimen/fab_margin"
+        custom:icon_add="@drawable/ic_add_white_24dp" />
+
+    <gtrotter.eu.android.utilities.Fab.ContactFabSort
+        android:id="@+id/contact_fab_sort"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_gravity="bottom|end"
+        android:layout_marginBottom="@dimen/fab_margin"
+        android:layout_marginEnd="@dimen/fab_mini_first_bottom"
+        android:layout_marginTop="@dimen/fab_margin"
+        custom:icon_alpha="@drawable/ic_sort_by_alpha_white_36dp"
+        custom:icon_favorite="@drawable/ic_favorite_white_36dp" />
+
+    <gtrotter.eu.android.utilities.Fab.ContactFabDelete
+        android:id="@+id/contact_fab_delete"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_gravity="bottom|end"
+        android:layout_marginBottom="@dimen/fab_mini_second_bottom"
+        android:layout_marginLeft="@dimen/fab_margin"
+        android:layout_marginRight="@dimen/fab_margin"
+        android:layout_marginTop="@dimen/fab_margin"
+        custom:icon_delete="@drawable/ic_delete_white_24dp"
+        custom:icon_undo="@drawable/ic_arrow_back_white_24dp" />
+
+</FrameLayout>

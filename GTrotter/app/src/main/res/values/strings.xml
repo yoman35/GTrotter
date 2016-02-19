@@ -1,0 +1,218 @@
+<resources>
+
+    <!-- Manifest.xml -->
+    <string name="app_name">GTrotter</string>
+    <string name="title_activity_sub">Settings</string>
+
+    <string name="navigation_open">Open</string>
+    <string name="navigation_close">Close</string>
+
+    <!-- Navigation Drawer-->
+    <string name="navigation_drawer_map">Map</string>
+    <string name="navigation_drawer_photos">Photos</string>
+    <string name="navigation_drawer_book">Profile</string>
+    <string name="navigation_drawer_about">What about GTrotter?</string>
+    <string name="header_subtext_default">user@domaine.default</string>
+    <string name="header_name_default">Default User</string>
+    <string name="recycler_view_icon_description">Icon</string>
+    <string name="recycler_view_title">Title</string>
+    <string name="recycler_view_description">Description</string>
+
+    <!-- Login -->
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="tab_sign_in_title">Sign In</string>
+    <string name="tab_register_title">Register</string>
+    <string name="et_login_username">Username</string>
+    <string name="et_login_password">Password</string>
+    <string name="forget_password">Forget password?</string>
+    <string name="remember_me">Remember me</string>
+    <string name="or_connect_with">Or connect with</string>
+    <string name="image_facebook_description">Sign In with Facebook</string>
+    <string name="image_google_plus_description">Sign In with Google+</string>
+    <string name="et_register_username">Username</string>
+    <string name="et_register_mail">Email Address</string>
+    <string name="et_login_confirm_password">Confirm password</string>
+    <string name="subscribe">Subscribe to the newsletter</string>
+    <string name="et_register_first_name">First name</string>
+    <string name="et_register_last_name">Last name</string>
+    <string name="log_out">Log out</string>
+    <string name="img_hint_password">Password field\'s hint</string>
+    <string name="toast_password_hint">At least one digit and one upper case (minimum: 8 characters)</string>
+    <string name="loginPrefs">loginPrefs</string>
+    <string name="remember">remember</string>
+
+    <!-- API -->
+    <string name="firstname">firstname</string>
+    <string name="lastname">lastname</string>
+    <string name="login">login</string>
+    <string name="email">email</string>
+    <string name="mToken">mToken</string>
+    <string name="message">message</string>
+    <string name="password">password</string>
+    <string name="internal_error">Server maintenance - retry later</string>
+    <string name="no_internet">no internet connection</string>
+    <string name="auth_error">Authentication failed</string>
+    <string name="server_error">Server internal error</string>
+    <string name="network_error">Network error</string>
+    <string name="parse_error">Data unreadable</string>
+    <string name="unknown_error">Unknown error</string>
+    <string name="error_confirm_password">password confirmation does not match</string>
+    <string name="missing_field">All fields are mandatory</string>
+    <string name="loading">Loading…</string>
+    <string name="synchronize">Synchronize</string>
+
+    <string name="title_activity_main_activity_test">MainActivityTest</string>
+    <string name="swipe">swipe by grabbing this arrow</string>
+    <string name="tab_profile_title">Profile</string>
+    <string name="tab_contact_title">Contacts</string>
+    <string name="id">id</string>
+    <string name="photo_content_description">photo</string>
+    <string name="title_activity_full_screen_photo">FullScreenPhoto</string>
+    <string name="image_list_description">photo</string>
+    <string name="fragment_state">FRAGMENT_STATE</string>
+    <string name="image_map_panel">photo</string>
+    <string name="user_button">User\'s button</string>
+    <string name="rv_fragment_item_background_description">background image</string>
+    <string name="rv_trips_item_bin">remove this place</string>
+    <string name="rv_fragment_item_info_zone_background">background image</string>
+    <string name="rv_trips_item_rue">remove</string>
+
+    <string name="fragment_photos_item_description">photo</string>
+    <string name="fragment_profile_header_background">User\'s background</string>
+    <string name="confirmed">confirmed</string>
+    <string name="gtrotter_api_address">https://www.g-trotter.eu:3000</string>
+
+    <string name="title_activity_splash_screen">SplashScreen</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="splash_screen_image_description">splash screen background</string>
+    <string name="gtrotter_logo">GTrotter\'s logo</string>
+    <string name="avatar">avatar</string>
+    <string name="trips">trips</string>
+    <string name="trip">trip</string>
+    <string name="indicator">indicator</string>
+    <string name="delete">Delete</string>
+    <string name="string_email">Mail</string>
+    <string name="string_phone">Phone</string>
+    <string name="unknown_data">Unknown</string>
+    <string name="phone">phone</string>
+    <string name="edit">edit</string>
+    <string name="work_in_progress">Work in progress…</string>
+    <string name="work">Work</string>
+    <string name="in_progress">in progress</string>
+    <string name="step_photo">step\'s photo</string>
+    <string name="step_info_zone">informational zone</string>
+    <string name="flag">country\'s flag</string>
+    <string name="unknown_city_and_country">Unknown, Unknown</string>
+    <string name="filter">Show filters</string>
+    <string name="filters_image">filter\'s icon</string>
+    <string name="unknown_filter">Unknown filter</string>
+    <string name="filters">Filters</string>
+    <string name="splash_screen">splash_screen</string>
+    <string name="fragment">fragment</string>
+    <string name="map_panel_header_title">My trips</string>
+    <string name="map_panel_header_options">My trips - Options</string>
+    <string name="press_back_again">Press Back again to Exit.</string>
+    <string name="trips_title">TRIPS</string>
+    <string name="filter_panel_title">FILTERS</string>
+    <string name="contact_avatar">Avatar</string>
+    <string name="contact_selected">Selected</string>
+    <string name="contact_name">Contact\'s name</string>
+    <string name="contact_phone">Contact\'s phone number</string>
+    <string name="contact_favor">Favorite</string>
+    <string name="contact_us">Contact us</string>
+    <string name="about_description_title">Who we are\n</string>
+    <string name="about_description">
+        GTrotter is an independent community web site with easy and intuitive tools for you to create, organize and share your traveling experience with other people passionate about travel.\n\n
+        Available as a social network, you will be able to plan everything about your travel on a single place: getting independent advices and photos of interesting places that other users discovered.\n\n
+        During your trip, you will be able to use the mobile applications to access your information onto an offline mode you would have loaded before leaving.\n\n
+        You would also use this application to find all interesting places around you such as landscapes, hotels, bars, restaurants and all other places that the community members found interesting.\n\n
+        Android development:\n
+        Yoann Bourgault
+    </string>
+    <string name="about_facebook">Facebook</string>
+    <string name="about_twitter">Twitter</string>
+    <string name="form_title">Mail form</string>
+    <string name="form_object">Object</string>
+    <string name="form_content">Message</string>
+    <string name="form_send">Send</string>
+    <string name="form_error_object">Object is empty</string>
+    <string name="form_error_message">Message\'s length must be between 5 and 200 characters</string>
+    <string name="no_email_app">No mailing app found on this phone, please install one from GooglePlayStore</string>
+    <string name="profile_tab_contact_title">Contacts</string>
+    <string name="profile_tab_information_title">Infos</string>
+    <string name="profile_tab_trips_title">Trips</string>
+    <string name="maps_attribution_title">Google Maps legal notices</string>
+    <string name="geo_localisation_turned_off"><L></L>ocalisation permissions not granted. Option turned off.</string>
+    <string name="geo_request_description">\"Location access is required to show places nearby.\"</string>
+    <string name="geo_request_failed">Unable to access location.</string>
+    <string name="geo_request_success">Location permission is available.</string>
+    <string name="geo_request_refused">Location is turned off.</string>
+    <string name="setting_account">Account</string>
+    <string name="settings_logo_password">password icon</string>
+    <string name="settings_text_password">Change password</string>
+    <string name="settings_logo_language">icon language</string>
+    <string name="settings_text_language">Language</string>
+    <string name="settings_logo_offline_mode">icon offline mode</string>
+    <string name="settings_text_offline_mode">Back-up data</string>
+    <string name="settings_logo_delete_account">icon delete account</string>
+    <string name="settings_text_delete_account">Delete account</string>
+    <string name="settings_map">Map</string>
+    <string name="settings_logo_view_map">icon map view</string>
+    <string name="settings_text_view_map">Map view</string>
+    <string name="settings_trips">Trips</string>
+    <string name="settings_logo_offline_mode_trips">icon offline mode (trips)</string>
+    <string name="settings_text_offline_mode_trips">Back-up trips</string>
+    <string name="settings_logo_delete_trips">icon delete trips</string>
+    <string name="settings_text_delete_trips">Delete trips</string>
+    <string name="settings_pictures">Pictures</string>
+    <string name="settings_logo_offline_mode_pictures">icon offline mode (pictures)</string>
+    <string name="settings_text_offline_mode_pictures">Back-up pictures</string>
+    <string name="settings_logo_delete_pictures">icon delete pictures</string>
+    <string name="settings_text_delete_pictures">Delete pictures</string>
+    <string name="map_marker_edit">Edit</string>
+    <string name="forget_password_error">Sorry. Email not found.</string>
+    <string name="forget_password_success">We have sent you a recovery form. Please check your mailbox.</string>
+    <string name="forget_password_dialog_submit">SEND</string>
+    <string name="forget_password_dialog_title">Enter your email address</string>
+    <string name="forget_password_dialog_hint">example@domain.com</string>
+    <string name="forget_password_progress_status">Loading...</string>
+    <string name="forget_password_progress_title">Please Wait...</string>
+    <string name="permission_dialog_title">Enable location service?</string>
+    <string name="permission_dialog_message">Using Google\'s location service to help you having better interactions with the map.</string>
+    <string name="dialog_permission_fine_agree">AGREE</string>
+    <string name="dialog_permission_fine_disagree">DISAGREE</string>
+    <string name="map_button_trips">TRIPS</string>
+    <string name="map_panel_add">Add a new trip</string>
+
+    <!-- Contact form destinations -->
+    <string-array name="destinations">
+        <item>Mobile</item>
+        <item>General</item>
+        <item>Feedback</item>
+        <item>Admin</item>
+    </string-array>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="create_trip_name">Trip name</string>
+    <string name="create_trip_save_button">SAVE</string>
+    <string name="create_trip_from">From</string>
+    <string name="create_trip_town_start">Place to begin</string>
+    <string name="create_trip_date_start">Starting date</string>
+    <string name="create_trip_town_end">Place to end</string>
+    <string name="create_trip_date_end">Ending date</string>
+    <string name="create_trip_to">To</string>
+    <string name="create_trip_privacy">Make this trip private</string>
+
+    <string name="api_key_google">AIzaSyAYOyI8BNaY290lzMrtBSiNs701Lt_Q9m4</string>
+    <string name="api_key_server">AIzaSyDci1fs-a4iWm3dc2Djq-qniEbq8LhF7LU</string>
+
+    <string-array name="trips">
+        <item>To the beach</item>
+        <item>South France</item>
+        <item>Visit London</item>
+    </string-array>
+
+
+</resources>

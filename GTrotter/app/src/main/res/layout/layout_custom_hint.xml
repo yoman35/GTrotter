@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/toast_password_hint"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal"
+    android:layout_margin="@dimen/small"
+    android:background="@drawable/toast_password_hint_border"
+    android:orientation="horizontal"
+    android:padding="@dimen/small">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:padding="@dimen/small"
+        android:text="@string/toast_password_hint"
+        android:textColor="@color/colorPrimaryLight"
+        android:textSize="16sp" />
+
+</LinearLayout>

@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card="http://schemas.android.com/apk/res-auto"
+    xmlns:ext="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.bluejamesbond.text.DocumentView
+        android:id="@+id/form_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        ext:documentView_text="@string/form_title"
+        ext:documentView_textAlignment="justified"
+        ext:documentView_textColor="@android:color/black"
+        ext:documentView_textSize="16dp"
+        ext:documentView_textTypefacePath="fonts/Roboto-Black.ttf" />
+
+    <Spinner
+        android:id="@+id/form_destination"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/form_title"/>
+
+    <LinearLayout
+        android:id="@+id/form_object_container_deprecated"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/form_destination"
+        android:layout_marginTop="@dimen/activity_horizontal_margin"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@color/colorPrimary"
+            android:contentDescription="@string/form_object"
+            android:scaleType="center"
+            android:src="@drawable/ic_short_text_black_24dp" />
+
+        <EditText
+            android:id="@+id/form_object_deprecated"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@color/colorPrimary"
+            android:hint="@string/form_object"
+            android:inputType="textShortMessage"
+            android:textColor="@android:color/white"
+            android:textColorHint="@android:color/white"
+            android:textCursorDrawable="@null"
+            android:padding="8dp"/>
+    </LinearLayout>
+
+
+    <com.github.florent37.materialtextfield.MaterialTextField
+        android:id="@+id/form_object_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/form_destination"
+        android:visibility="gone"
+        app:mtf_cardCollapsedHeight="2dp"
+        app:mtf_cardColor="@color/colorPrimary"
+        app:mtf_image="@drawable/ic_short_text_white_24dp"
+        app:mtf_labelColor="@color/colorPrimary"
+        app:mtf_openKeyboardOnFocus="true">
+
+        <EditText
+            android:id="@+id/form_object"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/form_object"
+            android:inputType="textShortMessage"
+            android:textColor="@android:color/white"
+            android:textColorHint="@android:color/white"
+            android:textCursorDrawable="@null" />
+    </com.github.florent37.materialtextfield.MaterialTextField>
+
+    <EditText
+        android:id="@+id/form_message"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:gravity="top|start"
+        android:hint="@string/form_content"
+        android:inputType="textMultiLine"
+        android:lines="5"
+        android:maxLines="10"
+        android:minLines="1"
+        android:textColor="@color/colorPrimary"
+        android:textColorHint="@color/colorPrimaryLight" />
+
+    <TextView
+        android:id="@+id/form_error"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/form_message"
+        android:layout_margin="2dp"
+        android:gravity="center"
+        android:textColor="@color/colorAccent"
+        android:visibility="gone" />
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/form_send_mail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@id/form_error"
+        android:foregroundGravity="center"
+        card:cardBackgroundColor="@color/colorPrimary"
+        card:cardCornerRadius="0dp"
+        card:cardElevation="0dp"
+        card:cardPreventCornerOverlap="true"
+        card:cardUseCompatPadding="true"
+        card:contentPadding="@dimen/cardview_content_padding">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:contentDescription="@string/form_send"
+            android:src="@drawable/ic_send_white_36dp" />
+    </android.support.v7.widget.CardView>
+
+</RelativeLayout>

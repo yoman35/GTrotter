@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="ContactFabSort">
+        <attr name="icon_favorite" format="integer" />
+        <attr name="icon_alpha" format="integer" />
+    </declare-styleable>
+</resources>
